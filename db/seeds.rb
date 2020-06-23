@@ -48,8 +48,8 @@ stopRamen = Stop.create :name => "Ramen Museum", :operational => true, :location
 stopOdaiba = Stop.create :name => "Odaiba", :operational => true, :location_x => 13, :location_y => 20
 puts "#{ Stop.count } Stops"
 
-tr1 = Trip.create :user => u1, :start => stopIdabashi, :end => stopShibuya
-# tr2 = Trip.create :user => u2, :start => stopIdabashi, :end => stopShinjuku
+tr1 = Trip.create! :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id
+# tr2 = Trip.create! :user => u2, :start_id => stopIdabashi, :end_id => stopShinjuku
 # tr3 = Trip.create :user => u3, :start => stopIkebukuro, :end =>stopUeno
 # tr4 = Trip.create :user => u4, :start => stopOdaiba, :end => stopShinjuku
 # tr5 = Trip.create :user => u5, :start => stopRoppongi, :end => stopIdabashi
