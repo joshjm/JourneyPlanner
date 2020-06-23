@@ -13,8 +13,6 @@ Stop.destroy_all
 # Line.destroy_all
 Edge.destroy_all
 
-
-
 u1 = User.create :name => "Joshua McDonald", :email => 'jonesy@ga.co', :balance => 10.5, :password => 'chicken'
 u2 = User.create :name => "Aleks", :email => 'aleks@ga.co', :balance => 4, :password => 'chicken'
 u3 = User.create :name => "John", :email => 'john@yahoo.com', :balance => 12, :password => 'chicken'

@@ -15617,3 +15617,12 @@ FOREIGN KEY ("to_id")
   ↳ db/seeds.rb:123
   [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "edges"[0m
   ↳ db/seeds.rb:125
+Started GET "/" for ::1 at 2020-06-23 19:55:44 +1000
+  [1m[35m (52.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.erb within layouts/application
+  Rendered welcome/index.erb within layouts/application (47.9ms)
+Completed 200 OK in 2148ms (Views: 2127.9ms | ActiveRecord: 0.0ms)
+
+
