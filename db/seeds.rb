@@ -48,21 +48,12 @@ stopRamen = Stop.create :name => "Ramen Museum", :operational => true, :location
 stopOdaiba = Stop.create :name => "Odaiba", :operational => true, :location_x => 13, :location_y => 20
 puts "#{ Stop.count } Stops"
 
-tr1 = Trip.create! :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id
-# tr2 = Trip.create! :user => u2, :start_id => stopIdabashi, :end_id => stopShinjuku
-# tr3 = Trip.create :user => u3, :start => stopIkebukuro, :end =>stopUeno
-# tr4 = Trip.create :user => u4, :start => stopOdaiba, :end => stopShinjuku
-# tr5 = Trip.create :user => u5, :start => stopRoppongi, :end => stopIdabashi
+tr1 = Trip.create :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id
+tr2 = Trip.create :user => u2, :start_id => stopIdabashi.id, :end_id => stopShinjuku.id
+tr3 = Trip.create :user => u3, :start_id => stopIkebukuro.id, :end_id =>stopUeno.id
+tr4 = Trip.create :user => u4, :start_id => stopOdaiba.id, :end_id => stopShinjuku.id
+tr5 = Trip.create :user => u5, :start_id => stopRoppongi.id, :end_id => stopIdabashi.id
 puts "#{ Trip.count } Trips"
-
-
-
-# e1 = Edge.create 
-# e2 = Edge.create 
-# e3 = Edge.create 
-# e4 = Edge.create 
-# puts "#{ Edge.count } Edges"
-
 
 
 # # Associations #################################################################
@@ -70,78 +61,65 @@ puts "#{ Trip.count } Trips"
 # redLine.stops << stopShibuya << stopRoppongi << stopShimbashi << stopUeno << stopIkebukuro << stopShinjuku
 # greenLine.stops << stopSunshine << stopIkebukuro << stopIkebukuro << stopRoppongi << stopOdaiba 
 
-# u1.transaction << ts1 <<ts2 << ts3
-# u2.transaction << ts4 << ts5
+# edges # 
+Edge.create :from_id => stopSunshine.id, :to_id =>  stopIkebukuro.id
+Edge.create :to_id => stopSunshine.id, :from_id =>  stopIkebukuro.id
+Edge.create :from_id => stopIkebukuro.id, :to_id => stopSunshine.id
+Edge.create :to_id => stopIkebukuro.id, :from_id => stopSunshine.id
 
-# u1.trips << tr1 <<tr2 << tr3
-# u2.trips << tr4 << tr5
+Edge.create :from_id => stopIkebukuro.id, :to_id => stopUeno.id
+Edge.create :to_id => stopIkebukuro.id, :from_id => stopUeno.id
+Edge.create :from_id => stopUeno.id, :to_id => stopIkebukuro.id
+Edge.create :to_id => stopUeno.id, :from_id => stopIkebukuro.id
 
-# stopOdaiba.start << tr1 << tr2 
-# stopPokemon.start << tr3 << tr4
-# stopShimbashi.start << tr5
+Edge.create :from_id => stopUeno.id, :to_id => stopPokemon.id
+Edge.create :to_id => stopUeno.id, :from_id => stopPokemon.id
+Edge.create :from_id => stopPokemon.id, :to_id => stopUeno.id
+Edge.create :to_id => stopPokemon.id, :from_id => stopUeno.id
 
-# stopRamen.end << tr3 << tr2 
-# stopRoppongi.end << tr1 << tr5
-# stopOdaiba.end << tr4
+Edge.create :from_id => stopUeno.id, :to_id => stopShimbashi.id
+Edge.create :to_id => stopUeno.id, :from_id => stopShimbashi.id
+Edge.create :from_id => stopShimbashi.id, :to_id => stopUeno.id
+Edge.create :to_id => stopShimbashi.id, :from_id => stopUeno.id
 
+Edge.create :from_id => stopShimbashi.id, :to_id => stopRoppongi.id
+Edge.create :to_id => stopShimbashi.id, :from_id => stopRoppongi.id
+Edge.create :from_id => stopRoppongi.id, :to_id => stopShimbashi.id
+Edge.create :to_id => stopRoppongi.id, :from_id => stopShimbashi.id
 
-# # edges # 
-# stopSunshine.from <<  stopIkebukuro
-# stopSunshine.to <<  stopIkebukuro
-# stopIkebukuro.from << stopSunshine
-# stopIkebukuro.to << stopSunshine
+Edge.create :from_id => stopRoppongi.id, :to_id => stopOdaiba.id
+Edge.create :to_id => stopRoppongi.id, :from_id => stopOdaiba.id
+Edge.create :from_id => stopOdaiba.id, :to_id => stopRoppongi.id
+Edge.create :to_id => stopOdaiba.id, :from_id => stopRoppongi.id
 
-# stopIkebukuro.from << stopUeno
-# stopIkebukuro.to << stopUeno
-# stopUeno.from << stopIkebukuro
-# stopUeno.to << stopIkebukuro
+Edge.create :from_id => stopRamen.id, :to_id => stopRoppongi.id
+Edge.create :to_id => stopRamen.id, :from_id => stopRoppongi.id
+Edge.create :from_id => stopRoppongi.id, :to_id => stopRamen.id
+Edge.create :to_id => stopRoppongi.id, :from_id => stopRamen.id
 
-# stopUeno.from << stopPokemon
-# stopUeno.to << stopPokemon
-# stopPokemon.from << stopUeno
-# stopPokemon.to << stopUeno
+Edge.create :from_id => stopRoppongi.id, :to_id => stopShibuya.id
+Edge.create :to_id => stopRoppongi.id, :from_id => stopShibuya.id
+Edge.create :from_id => stopShibuya.id, :to_id => stopRoppongi.id
+Edge.create :to_id => stopShibuya.id, :from_id => stopRoppongi.id
 
-# stopUeno.from << stopShimbashi
-# stopUeno.to << stopShimbashi
-# stopShimbashi.from << stopUeno
-# stopShimbashi.to << stopUeno
+Edge.create :from_id => stopShibuya.id, :to_id => stopShinjuku.id
+Edge.create :to_id => stopShibuya.id, :from_id => stopShinjuku.id
+Edge.create :from_id => stopShinjuku.id, :to_id => stopShibuya.id
+Edge.create :to_id => stopShinjuku.id, :from_id => stopShibuya.id
 
-# stopShimbashi.from << stopRoppongi
-# stopShimbashi.to << stopRoppongi
-# stopRoppongi.from << stopShimbashi
-# stopRoppongi.to << stopShimbashi
+Edge.create :from_id => stopShinjuku.id, :to_id => stopIkebukuro.id
+Edge.create :to_id => stopShinjuku.id, :from_id => stopIkebukuro.id
+Edge.create :from_id => stopIkebukuro.id, :to_id => stopShinjuku.id
+Edge.create :to_id => stopIkebukuro.id, :from_id => stopShinjuku.id
 
-# stopRoppongi.from << stopOdaiba
-# stopRoppongi.to << stopOdaiba
-# stopOdaiba.from << stopRoppongi
-# stopOdaiba.to << stopRoppongi
+Edge.create :from_id => stopIkebukuro.id, :to_id => stopIdabashi.id
+Edge.create :to_id => stopIkebukuro.id, :from_id => stopIdabashi.id
+Edge.create :from_id => stopIdabashi.id, :to_id => stopIkebukuro.id
+Edge.create :to_id => stopIdabashi.id, :from_id => stopIkebukuro.id
 
-# stopRamen.from << stopRoppongi
-# stopRamen.to << stopRoppongi
-# stopRoppongi.from << stopRamen
-# stopRoppongi.to << stopRamen
+Edge.create :from_id => stopIdabashi.id, :to_id => stopRoppongi.id
+Edge.create :to_id => stopIdabashi.id, :from_id => stopRoppongi.id
+Edge.create :from_id => stopRoppongi.id, :to_id => stopIdabashi.id
+Edge.create :to_id => stopRoppongi.id, :from_id => stopIdabashi.id
 
-# stopRoppongi.from << stopShibuya
-# stopRoppongi.to << stopShibuya
-# stopShibuya.from << stopRoppongi
-# stopShibuya.to << stopRoppongi
-
-# stopShibuya.from << stopShinjuku
-# stopShibuya.to << stopShinjuku
-# stopShinjuku.from << stopShibuya
-# stopShinjuku.to << stopShibuya
-
-# stopShinjuku.from << stopIkebukuro
-# stopShinjuku.to << stopIkebukuro
-# stopIkebukuro.from << stopShinjuku
-# stopIkebukuro.to << stopShinjuku
-
-# stopIkebukuro.from << stopIdabashi
-# stopIkebukuro.to << stopIdabashi
-# stopIdabashi.from << stopIkebukuro
-# stopIdabashi.to << stopIkebukuro
-
-# stopIdabashi.from << stopRoppongi
-# stopIdabashi.to << stopRoppongi
-# stopRoppongi.from << stopIdabashi
-# stopRoppongi.to << stopIdabashi
+puts "#{ Edge.count } Edges"
