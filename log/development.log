@@ -7859,3 +7859,1618 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1867ms (Views: 1850.7ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (43.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (65.5ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Destroy (4.0ms)[0m  [1m[31mDELETE FROM "transactions" WHERE "transactions"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (5.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (5.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (21.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Destroy (3.7ms)[0m  [1m[31mDELETE FROM "transactions" WHERE "transactions"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (3.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (5.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Destroy (1.4ms)[0m  [1m[31mDELETE FROM "transactions" WHERE "transactions"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (1.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (2.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Destroy (0.9ms)[0m  [1m[31mDELETE FROM "transactions" WHERE "transactions"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (0.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (2.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Destroy (0.9ms)[0m  [1m[31mDELETE FROM "transactions" WHERE "transactions"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (0.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (3.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[36mTrip Load (1.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (33.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (7.0ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (2.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (3.9ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (2.5ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (2.6ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (3.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (1.8ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (1.9ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (2.1ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (1.7ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStop Destroy (2.0ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (1.4ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (11.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$VSqPV2X0og2WPg7w02lsOuxlJwKhtnwedXCb9hLwuoWlveXAO3RZ2"], ["created_at", "2020-06-23 04:51:11.670702"], ["updated_at", "2020-06-23 04:51:11.670702"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$p0DsYiAOeOeZde4AAm1kje2OGTLpKa9KrDG0FU2PG3vQpFhG7KqBe"], ["created_at", "2020-06-23 04:51:12.352858"], ["updated_at", "2020-06-23 04:51:12.352858"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$2PDW9ikaPBBTlLZVUm1NkeYOlGQhOzRajRlvdb3HKE1QzgXvswcKq"], ["created_at", "2020-06-23 04:51:12.897261"], ["updated_at", "2020-06-23 04:51:12.897261"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$xVxxvBvvGFkepya2dRzgN.hbvRsMeMTf2omNZn2XjAlw7gW7PY.VC"], ["created_at", "2020-06-23 04:51:13.406646"], ["updated_at", "2020-06-23 04:51:13.406646"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$RL7n8c2bwLaKrsiT8XcqI.anshqQmJwZ1W.MZAJmSR7bbS23S/5my"], ["created_at", "2020-06-23 04:51:13.988820"], ["updated_at", "2020-06-23 04:51:13.988820"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$1uADEAwAM7pjuT5RlDIci.znPvC2edOZj0.YhEoWvC1AvOyXQNH8u"], ["created_at", "2020-06-23 04:51:14.552408"], ["updated_at", "2020-06-23 04:51:14.552408"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (3.1ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["amount", "10.0"], ["created_at", "2020-06-23 04:51:14.571105"], ["updated_at", "2020-06-23 04:51:14.571105"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["amount", "15.0"], ["created_at", "2020-06-23 04:51:14.585070"], ["updated_at", "2020-06-23 04:51:14.585070"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (1.7ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["amount", "20.0"], ["created_at", "2020-06-23 04:51:14.597159"], ["updated_at", "2020-06-23 04:51:14.597159"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["amount", "20.0"], ["created_at", "2020-06-23 04:51:14.611161"], ["updated_at", "2020-06-23 04:51:14.611161"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (2.0ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["amount", "50.0"], ["created_at", "2020-06-23 04:51:14.621477"], ["updated_at", "2020-06-23 04:51:14.621477"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (2.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 04:51:14.634761"], ["updated_at", "2020-06-23 04:51:14.634761"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (3.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 04:51:14.646007"], ["updated_at", "2020-06-23 04:51:14.646007"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (1.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 04:51:14.662045"], ["updated_at", "2020-06-23 04:51:14.662045"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (1.7ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 04:51:14.677706"], ["updated_at", "2020-06-23 04:51:14.677706"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:51:14.687909"], ["updated_at", "2020-06-23 04:51:14.687909"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (0.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:51:14.697532"], ["updated_at", "2020-06-23 04:51:14.697532"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:51:14.706855"], ["updated_at", "2020-06-23 04:51:14.706855"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (2.2ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 04:51:14.716473"], ["updated_at", "2020-06-23 04:51:14.716473"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 04:51:14.727688"], ["updated_at", "2020-06-23 04:51:14.727688"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 04:51:14.735564"], ["updated_at", "2020-06-23 04:51:14.735564"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 04:51:14.741799"], ["updated_at", "2020-06-23 04:51:14.741799"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (43.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (468.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (474.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1158.1ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_development" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1074.1ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_test" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (415.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (16.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateUsers (20200620075750)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (42.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "balance" float, "admin" boolean, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620075750_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620075750"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateStops (20200620079011)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "stops" ("id" bigserial primary key, "name" text, "operational" boolean, "location_x" decimal, "location_y" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620079011_create_stops.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620079011"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTransactions (20200620080337)
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (56.6ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "user_id" bigint, "amount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620080337"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTrips (20200620082443)
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (19.4ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "user_id" bigint, "start_id_id" bigint, "end_id_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_33b2ffbe45"
+FOREIGN KEY ("start_id_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_44852207b4"
+FOREIGN KEY ("end_id_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_start_id_id" ON "trips"  ("start_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_end_id_id" ON "trips"  ("end_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620082443"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateEdges (20200620083108)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "edges" ("id" bigserial primary key, "from_id" bigint, "to_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_080d246a43"
+FOREIGN KEY ("from_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_b22511a0e4"
+FOREIGN KEY ("to_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_from_id" ON "edges"  ("from_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_to_id" ON "edges"  ("to_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620083108"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (17.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 04:58:03.251873"], ["updated_at", "2020-06-23 04:58:03.251873"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (37.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (29.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (40.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (76.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (22.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (62.8ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (4.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$TtyX1ws6QiEcrmEw9qWteejJIY5RmYUDApfodwCFK3IpsujSIGBca"], ["created_at", "2020-06-23 04:58:12.051278"], ["updated_at", "2020-06-23 04:58:12.051278"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$bTmLBlHrG7kj9NpjMe4sluFeyv9hRMqtEiNQwuaUGpcibz4nb0V22"], ["created_at", "2020-06-23 04:58:12.614162"], ["updated_at", "2020-06-23 04:58:12.614162"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$3PRFXjjnoZ8z45l.1fuXNeNFVyTW6dO7pKe/UVaKu2VThJgfNGDpS"], ["created_at", "2020-06-23 04:58:13.145670"], ["updated_at", "2020-06-23 04:58:13.145670"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$hlGQdDN.4YA8cptTH9REsOT9bdjbLlK0o0y/YcjILFMZDZ.uIHYOK"], ["created_at", "2020-06-23 04:58:13.750569"], ["updated_at", "2020-06-23 04:58:13.750569"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$Ltm9mLneP1.fc78dmMzAs.EIwdlrGiQf0bZGYM/oA.XEFAasqGsbO"], ["created_at", "2020-06-23 04:58:14.306887"], ["updated_at", "2020-06-23 04:58:14.306887"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$wXpSq0yHl8EvJZwii9za4OxeUOCVxjG07E2y28McXX7J03yI26U4a"], ["created_at", "2020-06-23 04:58:14.851430"], ["updated_at", "2020-06-23 04:58:14.851430"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (6.7ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["amount", "10.0"], ["created_at", "2020-06-23 04:58:14.893905"], ["updated_at", "2020-06-23 04:58:14.893905"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (4.5ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["amount", "15.0"], ["created_at", "2020-06-23 04:58:14.918334"], ["updated_at", "2020-06-23 04:58:14.918334"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (2.7ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["amount", "20.0"], ["created_at", "2020-06-23 04:58:14.935706"], ["updated_at", "2020-06-23 04:58:14.935706"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["amount", "20.0"], ["created_at", "2020-06-23 04:58:14.949149"], ["updated_at", "2020-06-23 04:58:14.949149"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (2.3ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["amount", "50.0"], ["created_at", "2020-06-23 04:58:14.959729"], ["updated_at", "2020-06-23 04:58:14.959729"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (3.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 04:58:14.995620"], ["updated_at", "2020-06-23 04:58:14.995620"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (2.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 04:58:15.006248"], ["updated_at", "2020-06-23 04:58:15.006248"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (1.8ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 04:58:15.020017"], ["updated_at", "2020-06-23 04:58:15.020017"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 04:58:15.035128"], ["updated_at", "2020-06-23 04:58:15.035128"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (2.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:58:15.045239"], ["updated_at", "2020-06-23 04:58:15.045239"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (2.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:58:15.058099"], ["updated_at", "2020-06-23 04:58:15.058099"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 04:58:15.071327"], ["updated_at", "2020-06-23 04:58:15.071327"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (2.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 04:58:15.081416"], ["updated_at", "2020-06-23 04:58:15.081416"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (1.7ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 04:58:15.092717"], ["updated_at", "2020-06-23 04:58:15.092717"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 04:58:15.103775"], ["updated_at", "2020-06-23 04:58:15.103775"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (1.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 04:58:15.113221"], ["updated_at", "2020-06-23 04:58:15.113221"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (21.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (420.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (413.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1118.4ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_development" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1073.8ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_test" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (363.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateUsers (20200620075750)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "balance" float, "admin" boolean, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620075750_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620075750"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateStops (20200620079011)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE "stops" ("id" bigserial primary key, "name" text, "operational" boolean, "location_x" decimal, "location_y" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620079011_create_stops.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620079011"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTransactions (20200620080337)
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "user_id" bigint, "amount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620080337"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTrips (20200620082443)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "user_id" bigint, "start_id_id" bigint, "end_id_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_33b2ffbe45"
+FOREIGN KEY ("start_id_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_44852207b4"
+FOREIGN KEY ("end_id_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_start_id_id" ON "trips"  ("start_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_end_id_id" ON "trips"  ("end_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620082443"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateEdges (20200620083108)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "edges" ("id" bigserial primary key, "from_id" bigint, "to_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_080d246a43"
+FOREIGN KEY ("from_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_b22511a0e4"
+FOREIGN KEY ("to_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_from_id" ON "edges"  ("from_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_to_id" ON "edges"  ("to_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620083108"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (16.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (2.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 05:01:56.440689"], ["updated_at", "2020-06-23 05:01:56.440689"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (38.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (35.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (67.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (16.6ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (58.0ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$OtHl9GmAzNY9wrzD0PTLBezOLTvwKO/ZNBNhiXVBVzu/hlwXmpFmO"], ["created_at", "2020-06-23 05:02:04.382640"], ["updated_at", "2020-06-23 05:02:04.382640"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$gGQBep8TOOmvGAalM8SBf.8Zd88NJq2xOh6I.KycIYbzEtYmlQ8Zu"], ["created_at", "2020-06-23 05:02:05.055982"], ["updated_at", "2020-06-23 05:02:05.055982"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$dJYvIGUTS/N7jElqcLpDgOAMHzqslv393O..CwWTdtc/by6PjVhzW"], ["created_at", "2020-06-23 05:02:05.706653"], ["updated_at", "2020-06-23 05:02:05.706653"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (3.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$talmSbdot9qcA0pK28xSieD.uuxzUPPHiQyrXxHFglGqiq25QAMDu"], ["created_at", "2020-06-23 05:02:06.291320"], ["updated_at", "2020-06-23 05:02:06.291320"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$F1XTtSXdOATLggPbp46.NeP1rqJOyn.406RgKk7CqY1aLp29crOJ6"], ["created_at", "2020-06-23 05:02:06.886680"], ["updated_at", "2020-06-23 05:02:06.886680"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$tjh7Vvmj1fYkBLdq9zJli.AQc3ERMsYh3Erh9p/HlUyryfH6bfgrS"], ["created_at", "2020-06-23 05:02:07.485549"], ["updated_at", "2020-06-23 05:02:07.485549"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (5.8ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["amount", "10.0"], ["created_at", "2020-06-23 05:02:07.523997"], ["updated_at", "2020-06-23 05:02:07.523997"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (3.9ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["amount", "15.0"], ["created_at", "2020-06-23 05:02:07.542033"], ["updated_at", "2020-06-23 05:02:07.542033"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["amount", "20.0"], ["created_at", "2020-06-23 05:02:07.555281"], ["updated_at", "2020-06-23 05:02:07.555281"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["amount", "20.0"], ["created_at", "2020-06-23 05:02:07.565659"], ["updated_at", "2020-06-23 05:02:07.565659"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["amount", "50.0"], ["created_at", "2020-06-23 05:02:07.575519"], ["updated_at", "2020-06-23 05:02:07.575519"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (3.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:02:07.609434"], ["updated_at", "2020-06-23 05:02:07.609434"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (2.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:02:07.623145"], ["updated_at", "2020-06-23 05:02:07.623145"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (3.4ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 05:02:07.633366"], ["updated_at", "2020-06-23 05:02:07.633366"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 05:02:07.645708"], ["updated_at", "2020-06-23 05:02:07.645708"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (2.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:02:07.657629"], ["updated_at", "2020-06-23 05:02:07.657629"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (1.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:02:07.667576"], ["updated_at", "2020-06-23 05:02:07.667576"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:02:07.680060"], ["updated_at", "2020-06-23 05:02:07.680060"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:02:07.690180"], ["updated_at", "2020-06-23 05:02:07.690180"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (2.4ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:02:07.698921"], ["updated_at", "2020-06-23 05:02:07.698921"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 05:02:07.711182"], ["updated_at", "2020-06-23 05:02:07.711182"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (1.7ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 05:02:07.720838"], ["updated_at", "2020-06-23 05:02:07.720838"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (391.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (361.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1049.8ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_development" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1049.7ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_test" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (310.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (14.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateUsers (20200620075750)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (23.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "balance" float, "admin" boolean, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620075750_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620075750"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateStops (20200620079011)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (18.6ms)[0m  [1m[35mCREATE TABLE "stops" ("id" bigserial primary key, "name" text, "operational" boolean, "location_x" decimal, "location_y" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620079011_create_stops.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620079011"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTransactions (20200620080337)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (28.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "user_id" bigint, "amount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620080337"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTrips (20200620082443)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "user_id" bigint, "start_id_id" bigint, "end_id_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_33b2ffbe45"
+FOREIGN KEY ("start_id_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_44852207b4"
+FOREIGN KEY ("end_id_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_start_id_id" ON "trips"  ("start_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_end_id_id" ON "trips"  ("end_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620082443"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateEdges (20200620083108)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "edges" ("id" bigserial primary key, "from_id" bigint, "to_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_080d246a43"
+FOREIGN KEY ("from_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_b22511a0e4"
+FOREIGN KEY ("to_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_from_id" ON "edges"  ("from_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_to_id" ON "edges"  ("to_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620083108"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (12.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 05:03:09.457291"], ["updated_at", "2020-06-23 05:03:09.457291"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (40.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (15.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (33.9ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (67.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (21.0ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (54.8ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$vYOVToX9gCNurcCcbp6dKOLQBU10gKA5X/HRbLKCX3stoVw9YlrIi"], ["created_at", "2020-06-23 05:03:17.067301"], ["updated_at", "2020-06-23 05:03:17.067301"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$5xMVSdkMUKsoKjEr8moYTu0uz46Fu6c17Yb5hQGqXCXRwkzXQnsx6"], ["created_at", "2020-06-23 05:03:17.711184"], ["updated_at", "2020-06-23 05:03:17.711184"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$GbVnK8Q8Wj0FbOQXWPvbXOMQ3idm7lhly7dpbvpX5vRY6KpWdsFG2"], ["created_at", "2020-06-23 05:03:18.329028"], ["updated_at", "2020-06-23 05:03:18.329028"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$SU63sigzUoSpU4Wx5TNEfe3GUvqQNuI0itITndTv6zRTpBJKwmzCW"], ["created_at", "2020-06-23 05:03:18.898774"], ["updated_at", "2020-06-23 05:03:18.898774"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$QX0Krh4BklV6BzjTRekkteTU1Guczj0P3HuVS/S/LMXM/saxb1mdG"], ["created_at", "2020-06-23 05:03:19.526049"], ["updated_at", "2020-06-23 05:03:19.526049"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$6c.nhMkUyu4FrDQ0d2yxa.5cJa2g5Aox383d1ZNhKDzBZqskkXZPy"], ["created_at", "2020-06-23 05:03:20.088473"], ["updated_at", "2020-06-23 05:03:20.088473"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (5.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["amount", "10.0"], ["created_at", "2020-06-23 05:03:20.126636"], ["updated_at", "2020-06-23 05:03:20.126636"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (2.6ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["amount", "15.0"], ["created_at", "2020-06-23 05:03:20.140796"], ["updated_at", "2020-06-23 05:03:20.140796"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (2.3ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["amount", "20.0"], ["created_at", "2020-06-23 05:03:20.153647"], ["updated_at", "2020-06-23 05:03:20.153647"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (1.6ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["amount", "20.0"], ["created_at", "2020-06-23 05:03:20.164765"], ["updated_at", "2020-06-23 05:03:20.164765"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (1.5ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["amount", "50.0"], ["created_at", "2020-06-23 05:03:20.174889"], ["updated_at", "2020-06-23 05:03:20.174889"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (4.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:03:20.206345"], ["updated_at", "2020-06-23 05:03:20.206345"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:03:20.220138"], ["updated_at", "2020-06-23 05:03:20.220138"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 05:03:20.229538"], ["updated_at", "2020-06-23 05:03:20.229538"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (3.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 05:03:20.238500"], ["updated_at", "2020-06-23 05:03:20.238500"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (0.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:03:20.251019"], ["updated_at", "2020-06-23 05:03:20.251019"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:03:20.260705"], ["updated_at", "2020-06-23 05:03:20.260705"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.4ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:03:20.270111"], ["updated_at", "2020-06-23 05:03:20.270111"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:03:20.281117"], ["updated_at", "2020-06-23 05:03:20.281117"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:03:20.290803"], ["updated_at", "2020-06-23 05:03:20.290803"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.4ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 05:03:20.302011"], ["updated_at", "2020-06-23 05:03:20.302011"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (1.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 05:03:20.318552"], ["updated_at", "2020-06-23 05:03:20.318552"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (39.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (481.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (469.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1036.8ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_development" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1065.1ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_test" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (330.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (20.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateUsers (20200620075750)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "balance" float, "admin" boolean, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620075750_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620075750"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateStops (20200620079011)
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "stops" ("id" bigserial primary key, "name" text, "operational" boolean, "location_x" decimal, "location_y" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620079011_create_stops.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620079011"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTransactions (20200620080337)
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (29.4ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "user_id" bigint, "amount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620080337"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTrips (20200620082443)
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "user_id" bigint, "start_id_id" bigint, "end_id_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_33b2ffbe45"
+FOREIGN KEY ("start_id_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_44852207b4"
+FOREIGN KEY ("end_id_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_start_id_id" ON "trips"  ("start_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_end_id_id" ON "trips"  ("end_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620082443"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateEdges (20200620083108)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "edges" ("id" bigserial primary key, "from_id" bigint, "to_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_080d246a43"
+FOREIGN KEY ("from_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_b22511a0e4"
+FOREIGN KEY ("to_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_from_id" ON "edges"  ("from_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_to_id" ON "edges"  ("to_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620083108"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (15.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 05:04:26.257361"], ["updated_at", "2020-06-23 05:04:26.257361"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (19.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (19.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (35.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (74.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (17.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (50.8ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$ILRAkDIGtWFwI8PRfBE2NOgf7GhMwN/FxWQ8dQ0BhPuw/pGOfim7S"], ["created_at", "2020-06-23 05:04:35.579949"], ["updated_at", "2020-06-23 05:04:35.579949"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (21.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (5.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$5S3fiD64BVAEBM.dgWoT0.s//Z9XSl86QbA/mVpb3WnU5jKubLWFC"], ["created_at", "2020-06-23 05:04:36.398027"], ["updated_at", "2020-06-23 05:04:36.398027"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$xEuoFtqw8hQy4CNLK9VsdupN0/jrBmcDChCUVrU0CM/ykIjElo/cS"], ["created_at", "2020-06-23 05:04:37.049334"], ["updated_at", "2020-06-23 05:04:37.049334"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (5.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$roRVfLffPa54Jc9DBRYhcugPTwJWpgz5ddmjs.T4TkD1.AKQwuHf2"], ["created_at", "2020-06-23 05:04:37.663716"], ["updated_at", "2020-06-23 05:04:37.663716"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$fIgl6DG4frBuwto3.By6GuihpR6FpOcBKTWejTGyV0m3kKhj3OZIu"], ["created_at", "2020-06-23 05:04:38.274402"], ["updated_at", "2020-06-23 05:04:38.274402"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$ihClYPBlitRgnL.iQFMQYeGERuPD.1bRUGnTZ5q1iFp2k4bxRzvJC"], ["created_at", "2020-06-23 05:04:38.841865"], ["updated_at", "2020-06-23 05:04:38.841865"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (5.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["amount", "10.0"], ["created_at", "2020-06-23 05:04:38.891023"], ["updated_at", "2020-06-23 05:04:38.891023"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (1.0ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["amount", "15.0"], ["created_at", "2020-06-23 05:04:38.904816"], ["updated_at", "2020-06-23 05:04:38.904816"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["amount", "20.0"], ["created_at", "2020-06-23 05:04:38.913587"], ["updated_at", "2020-06-23 05:04:38.913587"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (2.0ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["amount", "20.0"], ["created_at", "2020-06-23 05:04:38.923046"], ["updated_at", "2020-06-23 05:04:38.923046"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (1.3ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["amount", "50.0"], ["created_at", "2020-06-23 05:04:38.932773"], ["updated_at", "2020-06-23 05:04:38.932773"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (3.7ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:04:38.964214"], ["updated_at", "2020-06-23 05:04:38.964214"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:04:38.978021"], ["updated_at", "2020-06-23 05:04:38.978021"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 05:04:38.987336"], ["updated_at", "2020-06-23 05:04:38.987336"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (1.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 05:04:38.997183"], ["updated_at", "2020-06-23 05:04:38.997183"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:04:39.007798"], ["updated_at", "2020-06-23 05:04:39.007798"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:04:39.018299"], ["updated_at", "2020-06-23 05:04:39.018299"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.8ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:04:39.027174"], ["updated_at", "2020-06-23 05:04:39.027174"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (2.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:04:39.042292"], ["updated_at", "2020-06-23 05:04:39.042292"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:04:39.054564"], ["updated_at", "2020-06-23 05:04:39.054564"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.0ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 05:04:39.064319"], ["updated_at", "2020-06-23 05:04:39.064319"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 05:04:39.073870"], ["updated_at", "2020-06-23 05:04:39.073870"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (47.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (60.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (419.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_development"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (515.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "JourneyPlanner_test"[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1477.7ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_development" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1331.3ms)[0m  [1m[35mCREATE DATABASE "JourneyPlanner_test" ENCODING = 'unicode'[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (371.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateUsers (20200620075750)
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (21.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "email" text, "balance" float, "admin" boolean, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620075750_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620075750"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateStops (20200620079011)
+  [1m[35m (4.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (22.7ms)[0m  [1m[35mCREATE TABLE "stops" ("id" bigserial primary key, "name" text, "operational" boolean, "location_x" decimal, "location_y" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200620079011_create_stops.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620079011"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTransactions (20200620080337)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (38.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" bigserial primary key, "user_id" bigint, "amount" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  ↳ db/migrate/20200620080337_create_transactions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620080337"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateTrips (20200620082443)
+  [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "user_id" bigint, "start_id_id" bigint, "end_id_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_33b2ffbe45"
+FOREIGN KEY ("start_id_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_44852207b4"
+FOREIGN KEY ("end_id_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_start_id_id" ON "trips"  ("start_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_end_id_id" ON "trips"  ("end_id_id")[0m
+  ↳ db/migrate/20200620082443_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620082443"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateEdges (20200620083108)
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "edges" ("id" bigserial primary key, "from_id" bigint, "to_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_080d246a43"
+FOREIGN KEY ("from_id")
+  REFERENCES "stops" ("id")
+, CONSTRAINT "fk_rails_b22511a0e4"
+FOREIGN KEY ("to_id")
+  REFERENCES "stops" ("id")
+)[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_from_id" ON "edges"  ("from_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE  INDEX  "index_edges_on_to_id" ON "edges"  ("to_id")[0m
+  ↳ db/migrate/20200620083108_create_edges.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200620083108"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (18.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (5.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 05:28:17.433915"], ["updated_at", "2020-06-23 05:28:17.433915"]]
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7934442974277155700)[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (33.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (24.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mTransaction Load (38.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mTrip Load (70.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mStop Load (20.0ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEdge Load (55.8ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Joshua McDonald"], ["email", "jonesy@ga.co"], ["balance", 10.5], ["password_digest", "$2a$12$dHS99vq.ixc3XLmjvQjAs.f9fRrji2dj48WU3ny6Wq17ultldIHMq"], ["created_at", "2020-06-23 05:28:26.511465"], ["updated_at", "2020-06-23 05:28:26.511465"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aleks"], ["email", "aleks@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$C4KGTQfmNq5hC5R02wRiuukDjZmTXNFdiXu7wXxd2HPal4B4LIbRK"], ["created_at", "2020-06-23 05:28:27.233545"], ["updated_at", "2020-06-23 05:28:27.233545"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "John"], ["email", "john@yahoo.com"], ["balance", 12.0], ["password_digest", "$2a$12$1gUYbn0sn14KVQYas7z4HegM8obnrYkn/48HauEZ9Bt3IQ..aZyQu"], ["created_at", "2020-06-23 05:28:27.834357"], ["updated_at", "2020-06-23 05:28:27.834357"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James"], ["email", "james@ga.co"], ["balance", 4.0], ["password_digest", "$2a$12$tmbo/Xl96lMH2115BnAEluwGp28YNrrVrAzZhL8zAXzAv2r.YaVpq"], ["created_at", "2020-06-23 05:28:28.359430"], ["updated_at", "2020-06-23 05:28:28.359430"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tracy"], ["email", "tracygirl66@gmail.com"], ["balance", 6.0], ["password_digest", "$2a$12$WuQwkCqKkwVIqk8lZEbqGeieyI15bN8IfiX9he3mbf3ade9joLPOu"], ["created_at", "2020-06-23 05:28:28.897845"], ["updated_at", "2020-06-23 05:28:28.897845"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "balance", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kate"], ["email", "kate@microsoft.com"], ["balance", 8.0], ["password_digest", "$2a$12$Kz8E7D8BonjS.vYLrgJe6OvT4RGi1QJslkHseOY7VAzexrFMkw94."], ["created_at", "2020-06-23 05:28:29.478935"], ["updated_at", "2020-06-23 05:28:29.478935"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mTransaction Create (4.2ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["amount", "10.0"], ["created_at", "2020-06-23 05:28:29.522471"], ["updated_at", "2020-06-23 05:28:29.522471"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mTransaction Create (3.7ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["amount", "15.0"], ["created_at", "2020-06-23 05:28:29.536165"], ["updated_at", "2020-06-23 05:28:29.536165"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mTransaction Create (1.3ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["amount", "20.0"], ["created_at", "2020-06-23 05:28:29.551266"], ["updated_at", "2020-06-23 05:28:29.551266"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mTransaction Create (2.8ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["amount", "20.0"], ["created_at", "2020-06-23 05:28:29.563301"], ["updated_at", "2020-06-23 05:28:29.563301"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mTransaction Create (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("user_id", "amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["amount", "50.0"], ["created_at", "2020-06-23 05:28:29.573872"], ["updated_at", "2020-06-23 05:28:29.573872"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "transactions"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mStop Create (4.5ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sunshine City"], ["operational", true], ["location_x", "3.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:28:29.608346"], ["updated_at", "2020-06-23 05:28:29.608346"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStop Create (1.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pokemon Centre"], ["operational", true], ["location_x", "13.0"], ["location_y", "2.0"], ["created_at", "2020-06-23 05:28:29.623715"], ["updated_at", "2020-06-23 05:28:29.623715"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ikebukuro"], ["operational", true], ["location_x", "4.0"], ["location_y", "7.0"], ["created_at", "2020-06-23 05:28:29.633987"], ["updated_at", "2020-06-23 05:28:29.633987"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mStop Create (2.4ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ueno"], ["operational", true], ["location_x", "9.0"], ["location_y", "6.0"], ["created_at", "2020-06-23 05:28:29.644947"], ["updated_at", "2020-06-23 05:28:29.644947"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shimbashi"], ["operational", true], ["location_x", "12.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:28:29.655504"], ["updated_at", "2020-06-23 05:28:29.655504"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mStop Create (1.3ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Idabashi"], ["operational", true], ["location_x", "7.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:28:29.666196"], ["updated_at", "2020-06-23 05:28:29.666196"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mStop Create (1.6ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shinjuku"], ["operational", true], ["location_x", "2.0"], ["location_y", "11.0"], ["created_at", "2020-06-23 05:28:29.676752"], ["updated_at", "2020-06-23 05:28:29.676752"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStop Create (1.8ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shibuya"], ["operational", true], ["location_x", "5.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:28:29.686587"], ["updated_at", "2020-06-23 05:28:29.686587"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mStop Create (1.8ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Roppongi"], ["operational", true], ["location_x", "10.0"], ["location_y", "16.0"], ["created_at", "2020-06-23 05:28:29.698505"], ["updated_at", "2020-06-23 05:28:29.698505"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mStop Create (1.9ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramen Museum"], ["operational", true], ["location_x", "2.0"], ["location_y", "21.0"], ["created_at", "2020-06-23 05:28:29.708456"], ["updated_at", "2020-06-23 05:28:29.708456"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mStop Create (2.1ms)[0m  [1m[32mINSERT INTO "stops" ("name", "operational", "location_x", "location_y", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Odaiba"], ["operational", true], ["location_x", "13.0"], ["location_y", "20.0"], ["created_at", "2020-06-23 05:28:29.718472"], ["updated_at", "2020-06-23 05:28:29.718472"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "stops"[0m
+  ↳ db/seeds.rb:49
