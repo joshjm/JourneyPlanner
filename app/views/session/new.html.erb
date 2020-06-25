@@ -1,5 +1,12 @@
 <h1>Sign In</h1>
 
+
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
 <%= form_tag login_path do%>
   <%= label_tag :email %>
   <%= email_field_tag :email %>

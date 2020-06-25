@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
 
+  get 'stations/index'
+  post '/stations/index' => 'stations#search'
+
   get 'transactions/new'
   post 'transactions/new' => 'transactions#update_balance'
   get 'transactions/index'

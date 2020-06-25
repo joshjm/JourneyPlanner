@@ -1,0 +1,25 @@
+<h2> Search through JP Rail stations here </h2>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<div class='example'>
+<%= form_with :local => true do %>
+  <input type="text" placeholder="Enter postcode (eg 810-0004 for Fukuoka)" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+<% end %>
+</div>
+
+
+<% if @search_results.present? %>
+<h2> Stations in postcode: <%= params[:search] %> </h2>
+    <% @search_results.each do |result| %>
+    <h3>  Station Name: <%= result.name %> </h3>
+    <ul>
+       <li>  Address: <%= result.address %>   </li>
+       <li>  longitude: <%= result.longitude %>   </li>
+       <li>  latitude: <%= result.latitude %>   </li>
+       <li>  line_id: <%= result.line_id %>   </li>
+    </ul>
+    <% end %>
+<% end %>

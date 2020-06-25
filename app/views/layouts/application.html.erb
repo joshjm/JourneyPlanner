@@ -15,6 +15,8 @@
 
 <nav>
   <%= link_to 'Home', root_path %>
+  <%= link_to 'Search Stations', stations_index_path %>
+
   <% if @current_user.present? %>
     <% if @current_user.admin? %>
      <%= link_to "all users", users_path %>
