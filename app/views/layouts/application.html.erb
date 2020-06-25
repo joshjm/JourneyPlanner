@@ -8,6 +8,7 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 </head>
 
 <body>
@@ -18,10 +19,9 @@
     <% if @current_user.admin? %>
      <%= link_to "all users", users_path %>
     <% end %>
-    <%= link_to "Trips", trips_index_path %>
-    <%= link_to "New Journey", trips_new_path %>
 
-    <%= link_to "Log out #{@current_user.email}", login_path, :method => 'delete' %>
+    <%= link_to "Log out #{@current_user.name}", login_path, :method => 'delete' %>
+    <%= "balance: #{@current_user.balance}" %>
   <% else %>
     <%= link_to 'Sign up', users_new_path %>
     <%= link_to 'Sign in', login_path %>

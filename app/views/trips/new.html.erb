@@ -1,7 +1,6 @@
-<h1>Trips#new</h1>
-<p>Find me in app/views/trips/new.html.erb</p>
-here is the create a new trip path
+<h2>Book a journey</h2>
 
+<%= image_tag("/images/railmap.png", alt: "rail-map", id: "railmap") %>
 <%= form_with model: @trip do |f| %>
     <%= f.label :start_id  %>
     <%= f.select :start_id, Stop.pluck(:name, :id) %>

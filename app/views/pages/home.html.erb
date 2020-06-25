@@ -1,5 +1,11 @@
 <h2>Home Page</h2>
 
 <% if @current_user.present? %>
-    <strong>User: <%= @current_user.email %></strong>
+<ul>
+    <li><strong>User: <%= @current_user.email %></strong></li>
+    <li> <%= link_to "New Journey", trips_new_path %> </li>
+    <li> <%= link_to "Add Funds", transactions_new_path %> </li>
+    <li> <%= link_to "View transactions", transactions_index_path %> </li>
+    <li> <%= link_to "View past trips", trips_index_path %> </li>
+</ul>
 <% end %>

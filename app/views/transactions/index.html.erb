@@ -1,0 +1,13 @@
+<h1>Transactions#index</h1>
+<h2> Transaction History: </h2>
+
+<% @transactions.each do |transaction| %>
+    <% if transaction.user_id == session[:user_id]  %>
+        <div class ="transaction-Container">
+            user: <%= transaction.user.name %>,
+            Amount: <%= transaction.amount %>,
+            Created at: <%= transaction.created_at %>,
+            last updated at: <%= transaction.updated_at %>
+        </div>
+    <% end %>
+<% end %>

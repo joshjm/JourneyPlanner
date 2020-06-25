@@ -1,0 +1,7 @@
+<h2> Add Funds </h2>
+
+<%= form_with model: @transaction do |f| %>
+    <%= f.label :amount  %>
+    <%= f.number_field :amount %>
+<%= f.submit %>
+<% end %>

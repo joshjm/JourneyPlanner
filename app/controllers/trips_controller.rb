@@ -15,8 +15,9 @@ class TripsController < ApplicationController
   def create
     # need to get the current user object, and call create on it. 
     @current_user.trips.create(trip_params)
-    #trip = Trip.create trip_params 
-    #puts "created trip: #{trip.id}"
+    trip_cost = 10
+    @current_user.balance -= trip_cost
+    @current_user.save
     redirect_to trips_index_path #show page
   end
 

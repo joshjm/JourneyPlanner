@@ -13,12 +13,12 @@ Stop.destroy_all
 # Line.destroy_all
 Edge.destroy_all
 
-u1 = User.create :name => "Joshua McDonald", :email => 'jonesy@ga.co', :balance => 10.5, :password => 'chicken'
-u2 = User.create :name => "Aleks", :email => 'aleks@ga.co', :balance => 4, :password => 'chicken'
-u3 = User.create :name => "John", :email => 'john@yahoo.com', :balance => 12, :password => 'chicken'
-u4 = User.create :name => "James", :email => 'james@ga.co', :balance => 4, :password => 'chicken'
-u5 = User.create :name => "Tracy", :email => 'tracygirl66@gmail.com', :balance => 6, :password => 'chicken'
-u6 = User.create :name => "Kate", :email => 'kate@microsoft.com', :balance => 8, :password => 'chicken'
+u1 = User.create :name => "Joshua McDonald", :email => 'josh@gmail.com', :balance => 50, :password => 'chicken', :admin => true
+u2 = User.create :name => "Aleks", :email => 'aleks@ga.co', :balance => 4, :password => 'chicken', :admin => false
+u3 = User.create :name => "John", :email => 'john@yahoo.com', :balance => 12, :password => 'chicken', :admin => false
+u4 = User.create :name => "James", :email => 'james@ga.co', :balance => 4, :password => 'chicken', :admin => false
+u5 = User.create :name => "Tracy", :email => 'tracygirl66@gmail.com', :balance => 6, :password => 'chicken', :admin => false
+u6 = User.create :name => "Kate", :email => 'kate@microsoft.com', :balance => 8, :password => 'chicken', :admin => false
 puts "#{ User.count } users"
 
 ts1 = Transaction.create :user => u1, :amount => 10 
