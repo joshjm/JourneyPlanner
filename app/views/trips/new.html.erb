@@ -1,0 +1,14 @@
+<h1>Trips#new</h1>
+<p>Find me in app/views/trips/new.html.erb</p>
+here is the create a new trip path
+
+<%= form_with model: @trip do |f| %>
+    <%= f.label :start_id  %>
+    <%= f.select :start_id, Stop.pluck(:name, :id) %>
+    <%= f.label :end_id  %>
+    <%= f.select :end_id, Stop.pluck(:name, :id)  %>
+    <%= f.label :date %>
+    <%= f.label :date, 'Date of travel:' %>
+    <%= f.text_field :date , :placeholder => 'YYYY-MM-DD' %>
+<%= f.submit %>
+<% end %>

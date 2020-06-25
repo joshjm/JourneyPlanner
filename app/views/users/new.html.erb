@@ -8,7 +8,8 @@
   </ol>
 <% end %>
 
-<%= form_for @user do |f| %>
+
+<%= form_with model: @user do |f| %>
   <%= f.label :email %>
   <%= f.email_field :email %>
 
@@ -18,5 +19,6 @@
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
 
-  <%= f.submit %>
+  <%= f.submit %> 
 <% end %>
+<%# redirs to user create controller %>

@@ -46,11 +46,12 @@ stopRamen = Stop.create :name => "Ramen Museum", :operational => true, :location
 stopOdaiba = Stop.create :name => "Odaiba", :operational => true, :location_x => 13, :location_y => 20
 puts "#{ Stop.count } Stops"
 
-tr1 = Trip.create :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id
-tr2 = Trip.create :user => u2, :start_id => stopIdabashi.id, :end_id => stopShinjuku.id
-tr3 = Trip.create :user => u3, :start_id => stopIkebukuro.id, :end_id =>stopUeno.id
-tr4 = Trip.create :user => u4, :start_id => stopOdaiba.id, :end_id => stopShinjuku.id
-tr5 = Trip.create :user => u5, :start_id => stopRoppongi.id, :end_id => stopIdabashi.id
+tr1 = Trip.create :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id, :date => "2020-05-3"
+tr2 = Trip.create :user => u2, :start_id => stopIdabashi.id, :end_id => stopShinjuku.id, :date => "2020-05-5"
+tr3 = Trip.create :user => u2, :start_id => stopRamen.id, :end_id => stopOdaiba.id, :date => "2020-04-7"
+tr4 = Trip.create :user => u3, :start_id => stopIkebukuro.id, :end_id =>stopUeno.id, :date => "2020-05-23"
+tr5 = Trip.create :user => u4, :start_id => stopOdaiba.id, :end_id => stopShinjuku.id, :date => "2020-05-15"
+tr6 = Trip.create :user => u5, :start_id => stopRoppongi.id, :end_id => stopIdabashi.id, :date => "2020-05-29"
 puts "#{ Trip.count } Trips"
 
 

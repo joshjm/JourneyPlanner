@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_06_20_083108) do
     t.bigint "user_id"
     t.bigint "start_id"
     t.bigint "end_id"
+    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["end_id"], name: "index_trips_on_end_id"

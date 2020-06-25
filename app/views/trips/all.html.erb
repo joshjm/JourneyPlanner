@@ -1,0 +1,9 @@
+<h2> Trip History: </h2>
+    <% @trips.each do |trip| %>
+        <div class ="trip-Container">
+        user: <%= trip.user.name %>,
+        from: <%= trip.start.name %>, 
+        To: <%= trip.end.name %>,
+        On date: <%= trip.date %>
+</div>
+    <% end %>

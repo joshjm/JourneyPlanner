@@ -18,15 +18,18 @@
     <% if @current_user.admin? %>
      <%= link_to "all users", users_path %>
     <% end %>
+    <%= link_to "Trips", trips_index_path %>
+    <%= link_to "New Journey", trips_new_path %>
+
     <%= link_to "Log out #{@current_user.email}", login_path, :method => 'delete' %>
   <% else %>
-    <%= link_to 'Sign up', new_user_path %>
+    <%= link_to 'Sign up', users_new_path %>
     <%= link_to 'Sign in', login_path %>
   <% end %>
 </nav>
-
+  <h1> JourneyPlanner for fantasy Tokyo </h1>
   <%= yield %>
-  
+
 </body>
 
 </html>

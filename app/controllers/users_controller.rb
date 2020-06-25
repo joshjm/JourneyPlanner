@@ -4,9 +4,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new user_params
+    @user = User.create user_params
     if @user.save # returns truthy on success
       flash[:notice] = "User created successfully"
+      session[:user_id] = @user.id
+
       redirect_to root_path
     else
       flash[:error] = "Could not create user"
