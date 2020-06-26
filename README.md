@@ -30,7 +30,7 @@ heroku run rake db:seed
 And your project should be live on heroku. 
 
 ## Todo
-See `projects/mvp` for an up to date list of upcoming features. 
+See `projects/mvp` for an up to date list of [upcoming features](https://github.com/gorff/JourneyPlanner/projects/1). 
 
 The main planned new features are:
 - [ ] breadth first search for finding distances between stations
