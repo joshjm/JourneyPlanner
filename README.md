@@ -38,6 +38,14 @@ The main planned new features are:
 - [ ] Allow start/end of trip selection by clicking stations in the image, rather than using dropdown
  
 ## Examples
-
+### Booking a trip
 ![image](screenshots/mainpage.png)
 
+### See all of the users transactions
+![image](screenshots/allTransactions.png)
+
+### See all of the users Trips
+![image](screenshots/allTrips.png)
+
+### Searching stations by postcode
+![image](screenshots/search.png)
