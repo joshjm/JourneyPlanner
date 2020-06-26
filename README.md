@@ -38,7 +38,7 @@ The main planned new features are:
 - [ ] Allow start/end of trip selection by clicking stations in the image, rather than using dropdown
  
 ## Relational model
-![image](screenshots/realtionalmodel.png)
+![image](screenshots/realtionmodel.png)
 
 ## Examples
 ### Booking a trip
