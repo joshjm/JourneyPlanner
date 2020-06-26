@@ -37,6 +37,9 @@ The main planned new features are:
 - [ ] Allow admin to add more stations and the edges between them and edge length
 - [ ] Allow start/end of trip selection by clicking stations in the image, rather than using dropdown
  
+## Relational model
+![image](screenshots/realtionalmodel.png)
+
 ## Examples
 ### Booking a trip
 ![image](screenshots/mainpage.png)
