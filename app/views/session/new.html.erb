@@ -1,4 +1,4 @@
-<h1>Sign In</h1>
+<center><h2 cass='h3 mb-3 font-weight-normal' >Please sign in</h2 ></center>
 
 
 <% flash.each do |type, msg| %>
@@ -7,12 +7,28 @@
   </div>
 <% end %>
 
-<%= form_tag login_path do%>
-  <%= label_tag :email %>
-  <%= email_field_tag :email %>
-
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-
-  <%= submit_tag "Sign in" %>
+<%= form_with url: login_path do |f| %>
+  <div class="field">
+    <div class="row">
+      <div class='col-md-4 offset-4'>
+        <%= f.email_field :email  , :placeholder => 'email'%>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <div class="row">
+      <div class='col-md-4 offset-4'>
+        <%= f.password_field :password , :placeholder => 'password' %>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <div class="row">
+      <div class='col-md-4 offset-4'>
+        <%= f.submit "Sign in", :class => 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
 <% end %>
+
+

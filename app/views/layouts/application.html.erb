@@ -8,32 +8,70 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 </head>
 
 <body>
 
-<nav>
-  <%= link_to 'Home', root_path %>
-  <%= link_to 'Search Stations', stations_index_path %>
 
-  <% if @current_user.present? %>
-    <% if @current_user.admin? %>
-     <%= link_to "all users", users_path %>
-    <% end %>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">JourneyPlanner</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <%= link_to 'Home', root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Search Stations', stations_index_path , class: "nav-link" %>
+          </li>
+          <% if @current_user.present? %>
+            <% if @current_user.admin? %>
+              <li class="nav-item">
+                <%= link_to "all users", users_path , class: "nav-link"%>
+              </li>
+            <% end %>
+            <li class="nav-item">
+              <%= link_to "Log out #{@current_user.name}", login_path, :method => 'delete' , class: "nav-link"%>
+            </li>
+            <li class="nav-text">
+              <a class="nav-link disabled"><%= "balance: #{@current_user.balance}" %></a>
+            </li>
+ 
+          
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Sign up', users_new_path, class: "nav-link" %>
+            </li>            
+            <li class="nav-item">
+              <%= link_to 'Sign in', login_path, class: "nav-link" %>
+            </li>
+          <% end %>
 
-    <%= link_to "Log out #{@current_user.name}", login_path, :method => 'delete' %>
-    <%= "balance: #{@current_user.balance}" %>
-  <% else %>
-    <%= link_to 'Sign up', users_new_path %>
-    <%= link_to 'Sign in', login_path %>
-  <% end %>
-</nav>
-  <h1> JourneyPlanner for fantasy Tokyo </h1>
-  <%= yield %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class='content'>
+  <div class='container'>
+    <%= yield %>
+  </div>
+</div>
+
+
+
+  <footer class="footer">
+    <div class="container text-center">
+            <span class="text-muted">Made with ❤ by Joshua McDonald</span>
+    </div>
+  </footer>
+
 
 </body>
 
 </html>
-
-
