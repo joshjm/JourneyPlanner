@@ -1,7 +1,16 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
 <h2> Add Funds </h2>
 
 <%= form_with model: @transaction do |f| %>
     <%= f.label :amount  %>
     <%= f.number_field :amount %>
-<%= f.submit %>
+<%= f.submit "Add to Balance" %>
 <% end %>
+
+</div>
+</div>
+</div>
+</div>

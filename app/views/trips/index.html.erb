@@ -1,18 +1,31 @@
 <div class="row justify-content-md-center">
-  <div class="col-md-6">
+  <div class="col-md-8">
 
-<h2> Trip History: </h2>
-<% @trips.each do |trip| %>
-<% if trip.user_id == session[:user_id]  %>
+<h2> Trip History </h2>
+<table class="table">
+    <thead> 
+        <tr>
+            <th scope="col"> Trip ID </th>
+            <th scope="col"> User </th>
+            <th scope="col"> From </th>
+            <th scope="col"> To </th>
+            <th scope="col"> Date </th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @trips.each do |trip| %>
+        <% if trip.user_id == session[:user_id]  %>
+            <tr>
+                <th scope ="row"><%= trip.id %> </th>
+                <td><%= trip.user.name %> </td>
+                <td><%= trip.start.name %> </td>
+                <td><%= trip.end.name %> </td>
+                <td><%= trip.date %> </td>
+            <tr>
 
-
-<div class="trip-Container">
-    User: <%= trip.user.name %>,
-    From: <%= trip.start.name %>,
-    To: <%= trip.end.name %>,
-    On date: <%= trip.date %>
-
+        <% end %>
+    <% end %>
+    </tbody>
+</table>
 </div>
-
-<% end %>
-<% end %>
+</div>

@@ -30659,3 +30659,998 @@ Processing by TripsController#index as HTML
 Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/trips/index" for ::1 at 2020-06-28 13:10:15 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:19
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:19
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:19
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:19
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  Rendered trips/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:10:35 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:10:45 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:10:52 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 65ms (Views: 61.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:11:02 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:11:27 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:11:28 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:12:21 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:12:22 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:12:24 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:12:51 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:12:51 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:13:24 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:13:32 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:13:39 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:14:06 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stations/index" for ::1 at 2020-06-28 13:14:07 +1000
+Processing by StationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:14:08 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/login" for ::1 at 2020-06-28 13:14:09 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9lA8qoK//EyAmD+PMeeqBYhIz/QiZsNbRcrYC8LBI6wOzFbTjJ/9cWPV7wKzXnF8RS41NZDv7hRtNx5pq09swA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2020-06-28 13:14:09 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:14:11 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:14:12 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-06-28 13:14:13 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-06-28 13:14:19 +1000
+Processing by SessionController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeOJJGT49kd7vWqB37mbtMfAopFIGyE5CdCi/mmW56yaCHBcugf+hRmCiDg9b2FkJg8AaTh2T4lnIgPkop78mg==", "email"=>"aleks@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aleks@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 200 OK in 183ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:14:19 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:14:22 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:14:42 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:14:56 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:15:04 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 58ms (Views: 54.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:15:42 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:15:48 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/new" for ::1 at 2020-06-28 13:15:52 +1000
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:11
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:15
+  Rendered trips/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stations/index" for ::1 at 2020-06-28 13:15:57 +1000
+Processing by StationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stations/index" for ::1 at 2020-06-28 13:16:02 +1000
+Processing by StationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IP45mukfUGoJjZat45kt+Bj8P3Jh0pWCOuuxO6HeQwKUV4p1vKdfZuac5bCakxmOttuO22k+/d0+vQl1dDKt5Q==", "search"=>"810-0004"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:16:04 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:16:06 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:16:07 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/transactions/index" for ::1 at 2020-06-28 13:16:09 +1000
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ app/views/transactions/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/transactions/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/transactions/index.html.erb:7
+  Rendered transactions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:16:11 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/transactions/index" for ::1 at 2020-06-28 13:17:59 +1000
+Processing by TransactionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering transactions/index.html.erb within layouts/application
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ app/views/transactions/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/transactions/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/transactions/index.html.erb:7
+  Rendered transactions/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:18:04 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 13:18:05 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 56ms (Views: 52.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 13:18:09 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/transactions/new" for ::1 at 2020-06-28 13:18:10 +1000
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering transactions/new.html.erb within layouts/application
+  Rendered transactions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/transactions/new" for ::1 at 2020-06-28 13:19:01 +1000
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering transactions/new.html.erb within layouts/application
+  Rendered transactions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/transactions/new" for ::1 at 2020-06-28 13:19:17 +1000
+Processing by TransactionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering transactions/new.html.erb within layouts/application
+  Rendered transactions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
