@@ -63,61 +63,37 @@ puts "#{ Trip.count } Trips"
 # edges # 
 Edge.create :from_id => stopSunshine.id, :to_id =>  stopIkebukuro.id
 Edge.create :to_id => stopSunshine.id, :from_id =>  stopIkebukuro.id
-Edge.create :from_id => stopIkebukuro.id, :to_id => stopSunshine.id
-Edge.create :to_id => stopIkebukuro.id, :from_id => stopSunshine.id
 
-Edge.create :from_id => stopIkebukuro.id, :to_id => stopUeno.id
-Edge.create :to_id => stopIkebukuro.id, :from_id => stopUeno.id
 Edge.create :from_id => stopUeno.id, :to_id => stopIkebukuro.id
 Edge.create :to_id => stopUeno.id, :from_id => stopIkebukuro.id
 
-Edge.create :from_id => stopUeno.id, :to_id => stopPokemon.id
-Edge.create :to_id => stopUeno.id, :from_id => stopPokemon.id
 Edge.create :from_id => stopPokemon.id, :to_id => stopUeno.id
 Edge.create :to_id => stopPokemon.id, :from_id => stopUeno.id
 
-Edge.create :from_id => stopUeno.id, :to_id => stopShimbashi.id
-Edge.create :to_id => stopUeno.id, :from_id => stopShimbashi.id
 Edge.create :from_id => stopShimbashi.id, :to_id => stopUeno.id
 Edge.create :to_id => stopShimbashi.id, :from_id => stopUeno.id
 
-Edge.create :from_id => stopShimbashi.id, :to_id => stopRoppongi.id
-Edge.create :to_id => stopShimbashi.id, :from_id => stopRoppongi.id
 Edge.create :from_id => stopRoppongi.id, :to_id => stopShimbashi.id
 Edge.create :to_id => stopRoppongi.id, :from_id => stopShimbashi.id
 
-Edge.create :from_id => stopRoppongi.id, :to_id => stopOdaiba.id
-Edge.create :to_id => stopRoppongi.id, :from_id => stopOdaiba.id
 Edge.create :from_id => stopOdaiba.id, :to_id => stopRoppongi.id
 Edge.create :to_id => stopOdaiba.id, :from_id => stopRoppongi.id
 
-Edge.create :from_id => stopRamen.id, :to_id => stopRoppongi.id
-Edge.create :to_id => stopRamen.id, :from_id => stopRoppongi.id
 Edge.create :from_id => stopRoppongi.id, :to_id => stopRamen.id
 Edge.create :to_id => stopRoppongi.id, :from_id => stopRamen.id
 
-Edge.create :from_id => stopRoppongi.id, :to_id => stopShibuya.id
-Edge.create :to_id => stopRoppongi.id, :from_id => stopShibuya.id
 Edge.create :from_id => stopShibuya.id, :to_id => stopRoppongi.id
 Edge.create :to_id => stopShibuya.id, :from_id => stopRoppongi.id
 
-Edge.create :from_id => stopShibuya.id, :to_id => stopShinjuku.id
-Edge.create :to_id => stopShibuya.id, :from_id => stopShinjuku.id
 Edge.create :from_id => stopShinjuku.id, :to_id => stopShibuya.id
 Edge.create :to_id => stopShinjuku.id, :from_id => stopShibuya.id
 
-Edge.create :from_id => stopShinjuku.id, :to_id => stopIkebukuro.id
-Edge.create :to_id => stopShinjuku.id, :from_id => stopIkebukuro.id
 Edge.create :from_id => stopIkebukuro.id, :to_id => stopShinjuku.id
 Edge.create :to_id => stopIkebukuro.id, :from_id => stopShinjuku.id
 
-Edge.create :from_id => stopIkebukuro.id, :to_id => stopIdabashi.id
-Edge.create :to_id => stopIkebukuro.id, :from_id => stopIdabashi.id
 Edge.create :from_id => stopIdabashi.id, :to_id => stopIkebukuro.id
 Edge.create :to_id => stopIdabashi.id, :from_id => stopIkebukuro.id
 
-Edge.create :from_id => stopIdabashi.id, :to_id => stopRoppongi.id
-Edge.create :to_id => stopIdabashi.id, :from_id => stopRoppongi.id
 Edge.create :from_id => stopRoppongi.id, :to_id => stopIdabashi.id
 Edge.create :to_id => stopRoppongi.id, :from_id => stopIdabashi.id
 

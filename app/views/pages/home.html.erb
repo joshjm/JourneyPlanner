@@ -6,9 +6,8 @@
 <% if @current_user.present? %>
 
 <h2>Home Page</h2>
-
+<p> Hi  <%= @current_user.name %>, what would you like to to today? </P>
 <ul>
-    <li><strong>User: <%= @current_user.email %></strong></li>
     <li> <%= link_to "New Journey", trips_new_path %> </li>
     <li> <%= link_to "Add Funds", transactions_new_path %> </li>
     <li> <%= link_to "View transactions", transactions_index_path %> </li>
