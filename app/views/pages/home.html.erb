@@ -1,6 +1,12 @@
-<h2>Home Page</h2>
+
+
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
 
 <% if @current_user.present? %>
+
+<h2>Home Page</h2>
+
 <ul>
     <li><strong>User: <%= @current_user.email %></strong></li>
     <li> <%= link_to "New Journey", trips_new_path %> </li>
@@ -8,5 +14,16 @@
     <li> <%= link_to "View transactions", transactions_index_path %> </li>
     <li> <%= link_to "View past trips", trips_index_path %> </li>
 </ul>
+<% else %>
+ <h3>
+ Please sign-in or sign-up.
+</h3>
+<div class="row justify-content-md-center">
+    <%= link_to 'Sign up', users_new_path, class: "btn btn-outline-primary" %>
+    <%= link_to 'Sign in', login_path, class: "btn btn-outline-primary" %>
+    </div>
 <% end %>
 
+
+ </div>
+</div>

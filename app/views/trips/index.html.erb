@@ -1,12 +1,18 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+
 <h2> Trip History: </h2>
-    <% @trips.each do |trip| %>
-    <% if trip.user_id == session[:user_id]  %>
-        <div class ="trip-Container">
-        user: <%= trip.user.name %>,
-        from: <%= trip.start.name %>, 
-        To: <%= trip.end.name %>,
-        On date: <%= trip.date %>
+<% @trips.each do |trip| %>
+<% if trip.user_id == session[:user_id]  %>
+
+
+<div class="trip-Container">
+    User: <%= trip.user.name %>,
+    From: <%= trip.start.name %>,
+    To: <%= trip.end.name %>,
+    On date: <%= trip.date %>
+
 </div>
 
 <% end %>
-    <% end %>
+<% end %>

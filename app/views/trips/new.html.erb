@@ -1,13 +1,27 @@
-<h2>Book a journey</h2>
+<div class="row justify-content-md-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2>Book a journey</h2>
 
-<%= image_tag("/images/railmap.png", alt: "rail-map", id: "railmap") %>
-<%= form_with model: @trip do |f| %>
-    <%= f.label :start_id  %>
-    <%= f.select :start_id, Stop.pluck(:name, :id) %>
-    <%= f.label :end_id  %>
-    <%= f.select :end_id, Stop.pluck(:name, :id)  %>
-    <%= f.label :date %>
-    <%= f.label :date, 'Date of travel:' %>
-    <%= f.text_field :date , :placeholder => 'YYYY-MM-DD' %>
-<%= f.submit %>
-<% end %>
+                <img src="/images/railmap.png" alt="rail-map" id="railmap">
+                <%= form_with model: @trip do |f| %>
+                <div class="form-group">
+                    <%= f.label :start_id  %>
+                    <%= f.select :start_id, Stop.pluck(:name, :id), :class => 'form-control' %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :end_id  %>
+                    <%= f.select :end_id, Stop.pluck(:name, :id), :class => 'form-control'  %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :date, 'Date of travel:' %>
+                    <%= f.text_field :date , :placeholder => 'YYYY-MM-DD', :class => 'form-control' %>
+                </div>
+
+                <%= f.submit %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
