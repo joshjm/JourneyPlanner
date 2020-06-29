@@ -3,7 +3,9 @@ class StopsController < ApplicationController
   def new
   end
 
-  def delete
+  def destroy
+    Stop.find(params[:id]).destroy
+    redirect_to action: 'index'
   end
 
   def index

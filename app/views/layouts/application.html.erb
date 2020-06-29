@@ -26,13 +26,11 @@
           <li class="nav-item active">
             <%= link_to 'Home', root_path, class: "nav-link" %>
           </li>
-          <li class="nav-item">
-            <%= link_to 'Search Stations', stations_index_path , class: "nav-link" %>
-          </li>
+
           <% if @current_user.present? %>
             <% if @current_user.admin? %>
               <li class="nav-item">
-                <%= link_to "Add Station", stops_path , class: "nav-link"%>
+                <%= link_to "Stations", stops_path , class: "nav-link"%>
               </li>
             <% end %>
             <li class="nav-item">

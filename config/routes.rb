@@ -7,9 +7,7 @@ Rails.application.routes.draw do
   get 'stops/Index'
   root :to => 'pages#home'
 
-  get 'stations/index'
-  post '/stations/index' => 'stations#search'
-
+ 
   get 'transactions/new'
   post 'transactions/new' => 'transactions#update_balance'
   get 'transactions/index'
@@ -31,7 +29,6 @@ Rails.application.routes.draw do
   get 'users/add_funds'
   resources :users #resources generates 8 routes for me
 
-  resources :stations 
   resources :stops 
 
 

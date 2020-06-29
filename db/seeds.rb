@@ -44,6 +44,7 @@ stopShibuya = Stop.create :name => "Shibuya", :operational => true, :location_x 
 stopRoppongi = Stop.create :name => "Roppongi", :operational => true, :location_x => 10, :location_y => 16
 stopRamen = Stop.create :name => "Ramen Museum", :operational => true, :location_x => 2, :location_y => 21
 stopOdaiba = Stop.create :name => "Odaiba", :operational => true, :location_x => 13, :location_y => 20
+stopUseless = Stop.create :name => "Useless", :operational => true, :location_x => 15, :location_y => 19
 puts "#{ Stop.count } Stops"
 
 tr1 = Trip.create :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id, :date => "2020-05-3"
@@ -96,5 +97,8 @@ Edge.create :to_id => stopIdabashi.id, :from_id => stopIkebukuro.id
 
 Edge.create :from_id => stopRoppongi.id, :to_id => stopIdabashi.id
 Edge.create :to_id => stopRoppongi.id, :from_id => stopIdabashi.id
+
+Edge.create :from_id => stopUseless.id, :to_id => stopIdabashi.id
+Edge.create :to_id => stopUseless.id, :from_id => stopIdabashi.id
 
 puts "#{ Edge.count } Edges"

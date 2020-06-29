@@ -4,6 +4,34 @@
     <%= render "shared/map" %>
 </div>
 
-<% @stops.each do |stop| %>
-    <% stop.name %>
-<% end %>
+<div class="row justify-content-md-center">
+  <div class="col-md-8">
+
+<h2> Stations Index </h2>
+<table class="table">
+    <thead> 
+        <tr>
+            <th scope="col"> stop ID </th>
+            <th scope="col"> Station Name </th>
+            <th scope="col"> x Location </th>
+            <th scope="col"> y Location </th>
+            <th scope="col"> Action Selector </th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @stops.each do |stop| %>
+            <tr>
+                <td><%= stop.id %> </td>
+                <td><%= stop.name %> </td>
+                <td><%= stop.location_x %> </td>
+                <td><%= stop.location_y %> </td>
+                <td> 
+                    <%= link_to 'Edit', edit_stop_path(stop.id) %> 
+                    <%= link_to "Delete", stop, method: :delete %>
+                </td>
+            <tr>
+    <% end %>
+    </tbody>
+</table>
+</div>
+</div>
