@@ -32382,3 +32382,496 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-06-28 21:31:04 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 21:31:08 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-06-28 21:31:10 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-06-28 21:31:15 +1000
+Processing by SessionController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MsxtXclixIWaqSGCo6J4qmOrmz/XPnm8T7nESby4hRnIMjNqdqD0HRVRj/oWHMySEEMlI8xl1afzEYL7fr5Ig==", "email"=>"aleks@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aleks@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 200 OK in 183ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2020-06-28 21:31:15 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-06-28 21:31:22 +1000
+Processing by SessionController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oxXAALjTgjSJxwx2kcu1i3HX0lgqmdQhI1w/l1uYeZQg/jl4ZiyK9uv47s9zHU9bkBhwoFr0upFNrp6NkJBiog==", "email"=>"aeks@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aeks@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 200 OK in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2020-06-28 21:31:22 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-06-28 21:33:28 +1000
+Processing by SessionController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hkPlIKP+vfysL+KHTAM8fVrMz35NK9y5iu9cJPq4dxQFqBxYfQG1Ps4QAD6u1catuwNthj1GsgnkHf0+MbBsIg==", "email"=>"aleks@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aleks@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 200 OK in 179ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 21:33:29 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/new" for ::1 at 2020-06-28 21:33:35 +1000
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:11
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:15
+  Rendered trips/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/trips/new" for ::1 at 2020-06-28 21:33:40 +1000
+Processing by TripsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JesQOfACEglpXJU3MIDGWWkiu8nmrOOZXJFjUxCTAGTjcoQA5Hw9n8eeI4QzCmMfEg1YKRtpJemqxoibbq8flQ==", "start_id"=>"6", "end_id"=>"8", "date"=>"", "commit"=>"Save "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Unpermitted parameters: :utf8, :authenticity_token, :commit
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:17
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:17
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:17
+  [1m[36mTrip Create (4.8ms)[0m  [1m[32mINSERT INTO "trips" ("user_id", "start_id", "end_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["start_id", 6], ["end_id", 8], ["created_at", "2020-06-28 11:33:40.156339"], ["updated_at", "2020-06-28 11:33:40.156339"]]
+  ↳ app/controllers/trips_controller.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:20
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["balance", 74.0], ["updated_at", "2020-06-28 11:33:40.164386"], ["id", 2]]
+  ↳ app/controllers/trips_controller.rb:20
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:20
+Redirected to http://localhost:3000/trips/index
+Completed 200 OK in 38ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 21:33:40 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (1.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/stations/index" for ::1 at 2020-06-28 21:33:48 +1000
+Processing by StationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/stations/index" for ::1 at 2020-06-28 21:33:53 +1000
+Processing by StationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0DeC/sLFyb/fIVEhCLwnmk0MHzMktAEiCJicGAfW+dxknjERl33GszAwIjxxthPs4yuumixYaX0MziRW0joXOw==", "search"=>"810-0004"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 387ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stations/index" for ::1 at 2020-06-28 21:34:07 +1000
+Processing by StationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 21:34:09 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 21:34:12 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/index" for ::1 at 2020-06-28 21:34:14 +1000
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/views/trips/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:20
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:21
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/trips/index.html.erb:22
+  Rendered trips/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-28 21:34:18 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:33:33 +1000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joshua/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 317ms (Views: 314.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:46:33 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:     </div>
+    24: <% end %>
+    25: 
+    26: <%= @stop.each do |stop| %>
+    27:   <%=  stop %>
+    28: <%  end %> 
+    29:  </div>
+  
+app/views/pages/home.html.erb:26:in `_app_views_pages_home_html_erb___151783628492814121_22380'
+Started GET "/" for ::1 at 2020-06-29 16:46:44 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.5ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:48:25 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:49:36 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:50:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.5ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:51:45 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    24: <% end %>
+    25: 
+    26: <% @stops.each do |stop| %>
+    27:   <%= stop.location_x stop.location_y  %>
+    28: <%  end %> 
+    29:  </div>
+    30: </div>
+  
+app/views/pages/home.html.erb:27:in `block in _app_views_pages_home_html_erb___151783628492814121_23300'
+app/views/pages/home.html.erb:26:in `_app_views_pages_home_html_erb___151783628492814121_23300'
+Started GET "/" for ::1 at 2020-06-29 16:51:59 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:52:08 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:26
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:56:04 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:56:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:57:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:57:22 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.9ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:57:33 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 16:58:13 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:02:10 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:03:14 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:03:20 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.5ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:04:09 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:04:27 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:04:45 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:04:59 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:05:25 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:28
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:05:48 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:30
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:05:51 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:30
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+

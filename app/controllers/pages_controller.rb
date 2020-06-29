@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
   def home
-  end
+    @stops = Stop.all
+    @edges = Edge.all
+  end # implicit rendering of /pages/home.html.erb
 end

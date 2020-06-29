@@ -24,5 +24,26 @@
 <% end %>
 
 
+<svg width="500" height="500">
+    // // Draw Edges
+    // for edge in @edges do
+    //    from = @stops[edge.from_id]
+    //    from_x = from.location_x
+    //    from_y = from.location_y
+    //    to = @stops[edge.to_id]
+    //    to_x = to.location_x
+    //    to_y = to.location_y
+    //    
+    //    svg_draw_line([from_x, from_y], [to_x, to_y])
+    // 
+
+    // Draw Stops
+    <% @stops.each do |stop| %>
+    <circle cx="<%= (500/25)*stop.location_x %>" cy="<%= (500/25)*stop.location_y %>" r="5" stroke="black" stroke-width="2" fill="white" />
+    <text x="<%= (500/25)*stop.location_x+10 %>" y="<%= (500/25)*stop.location_y %>"><%= stop.name %></text>
+    <%  end %> 
+</svg>
+
+
  </div>
 </div>
