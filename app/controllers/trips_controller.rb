@@ -10,6 +10,7 @@ class TripsController < ApplicationController
   end
 
   def new
+    generate_map_data
   end
 
   def create

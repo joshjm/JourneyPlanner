@@ -1,0 +1,12 @@
+<svg width="500" height="500">
+    // Draw Edges
+    <% @pair_points.each do |pair| %>
+        <line x1="<%= @scale*pair[0] %>" y1="<%= @scale*pair[1] %>" x2="<%= @scale*pair[2] %>" y2="<%= @scale*pair[3] %>" style="stroke:rgb(0,0,0);stroke-width:2" />
+    <%  end %> 
+
+    // Draw Stops
+    <% @stops.each do |stop| %>
+    <circle cx="<%= @scale*stop.location_x %>" cy="<%= @scale*stop.location_y %>" r="5" stroke="black" stroke-width="2" fill="white" />
+    <text x="<%= @scale*stop.location_x+10 %>" y="<%= @scale*stop.location_y %>"><%= stop.name %></text>
+    <%  end %> 
+</svg>

@@ -15,6 +15,17 @@ class ApplicationController < ActionController::Base
     def check_for_admin
       redirect_to root_path unless @current_user.present? && @current_user.admin? 
     end
+
+    def generate_map_data
+      @scale = 500/25
+      @stops = Stop.all
+      @pair_points = Edge.all.map {|e| [
+        Stop.find(e.from_id).location_x, 
+        Stop.find(e.from_id).location_y,
+        Stop.find(e.to_id).location_x, 
+        Stop.find(e.to_id).location_y
+      ]}
+    end
   
   end
   

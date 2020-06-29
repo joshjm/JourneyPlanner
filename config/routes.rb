@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'stops/new'
+  get 'stops/delete'
+  get 'stops/index'
+  get 'stops/New'
+  get 'stops/Delete'
+  get 'stops/Index'
   root :to => 'pages#home'
 
   get 'stations/index'
@@ -24,6 +30,9 @@ Rails.application.routes.draw do
   get 'users/create'
   get 'users/add_funds'
   resources :users #resources generates 8 routes for me
+
+  resources :stations 
+  resources :stops 
 
 
   get '/login' => 'session#new'
