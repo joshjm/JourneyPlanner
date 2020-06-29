@@ -32875,3 +32875,2110 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-06-29 17:30:27 +1000
+  
+SyntaxError (/home/joshua/JourneyPlanner/app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+    @pair_points = [[(12,4),(4,5)], [(3,3), (6,18)]] #...
+                        ^
+/home/joshua/JourneyPlanner/app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+    @pair_points = [[(12,4),(4,5)], [(3,3), (6,18)]] # test
+                              ^
+/home/joshua/JourneyPlanner/app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+..._points = [[(12,4),(4,5)], [(3,3), (6,18)]] # test
+...                              ^
+/home/joshua/JourneyPlanner/app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+... = [[(12,4),(4,5)], [(3,3), (6,18)]] # test
+...                              ^
+):
+  
+app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+app/controllers/pages_controller.rb:6: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2020-06-29 17:31:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.6ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:44
+  Rendered pages/home.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 87ms (Views: 76.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:34:50 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.7ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.8ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 84ms (Views: 55.1ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:35:11 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.4ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 107ms (Views: 79.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:35:34 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.5ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mStop Load (0.5ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 93ms (Views: 68.4ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:35:47 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.5ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mStop Load (0.7ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/controllers/pages_controller.rb:14
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 68.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:44:53 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.6ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/controllers/pages_controller.rb:14
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 6.1ms)
+
+
+  
+NoMethodError (undefined method `location_x' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:16:in `block in home'
+app/controllers/pages_controller.rb:13:in `map'
+app/controllers/pages_controller.rb:13:in `home'
+Started GET "/" for ::1 at 2020-06-29 17:48:05 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.3ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 8.8ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:19:in `home'
+Started GET "/" for ::1 at 2020-06-29 17:48:14 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.5ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 10.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for 0.3e1:BigDecimal):
+    27: <svg width="500" height="500">
+    28:     // Draw Edges
+    29:     <% @pair_points.each do |pair| %>
+    30:         <line x1="<%= @scale*pair[0][0] %>" y1="<%= @scale*pair[0][1] %>" x2="<%= @scale*pair[1][0] %>" y2="<%= @scale*pair[1][1] %>" style="stroke:rgb(0,0,0);stroke-width:2" />
+    31:     <%  end %> 
+    32: 
+    33:     // Draw Stops
+  
+app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb___151783628492814121_63620'
+app/views/pages/home.html.erb:29:in `each'
+app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb___151783628492814121_63620'
+Started GET "/" for ::1 at 2020-06-29 17:49:05 +1000
+Processing by PagesController#home as HTML
+  [1m[36mEdge Load (0.4ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.1ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.5ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:34
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 148ms (Views: 57.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/login" for ::1 at 2020-06-29 17:50:37 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2020-06-29 17:50:44 +1000
+Processing by SessionController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gr0lr8qFb675KB1c6CLt5Xl4qdjvevZRmw1SnMVSY2F8Jd1ujndLjVNOl67ZZSD13svxUhZeBYl1mMQ3HY8BYw==", "email"=>"aleks@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aleks@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 200 OK in 202ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:50:45 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mEdge Load (0.4ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:34
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 118ms (Views: 46.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/trips/new" for ::1 at 2020-06-29 17:50:48 +1000
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering trips/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:11
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "stops"."name", "stops"."id" FROM "stops"[0m
+  ↳ app/views/trips/new.html.erb:15
+  Rendered trips/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-29 17:54:53 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mEdge Load (0.3ms)[0m  [1m[34mSELECT "edges".* FROM "edges"[0m
+  ↳ app/controllers/pages_controller.rb:13
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.4ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.2ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:14
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:15
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:16
+  [1m[36mCACHE Stop Load (0.0ms)[0m  [1m[34mSELECT  "stops".* FROM "stops" WHERE "stops"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:17
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  ↳ app/views/pages/home.html.erb:34
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 139ms (Views: 59.8ms | ActiveRecord: 5.2ms)
+
+

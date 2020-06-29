@@ -25,22 +25,15 @@
 
 
 <svg width="500" height="500">
-    // // Draw Edges
-    // for edge in @edges do
-    //    from = @stops[edge.from_id]
-    //    from_x = from.location_x
-    //    from_y = from.location_y
-    //    to = @stops[edge.to_id]
-    //    to_x = to.location_x
-    //    to_y = to.location_y
-    //    
-    //    svg_draw_line([from_x, from_y], [to_x, to_y])
-    // 
+    // Draw Edges
+    <% @pair_points.each do |pair| %>
+        <line x1="<%= @scale*pair[0] %>" y1="<%= @scale*pair[1] %>" x2="<%= @scale*pair[2] %>" y2="<%= @scale*pair[3] %>" style="stroke:rgb(0,0,0);stroke-width:2" />
+    <%  end %> 
 
     // Draw Stops
     <% @stops.each do |stop| %>
-    <circle cx="<%= (500/25)*stop.location_x %>" cy="<%= (500/25)*stop.location_y %>" r="5" stroke="black" stroke-width="2" fill="white" />
-    <text x="<%= (500/25)*stop.location_x+10 %>" y="<%= (500/25)*stop.location_y %>"><%= stop.name %></text>
+    <circle cx="<%= @scale*stop.location_x %>" cy="<%= @scale*stop.location_y %>" r="5" stroke="black" stroke-width="2" fill="white" />
+    <text x="<%= @scale*stop.location_x+10 %>" y="<%= @scale*stop.location_y %>"><%= stop.name %></text>
     <%  end %> 
 </svg>
 
