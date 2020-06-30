@@ -1,6 +1,6 @@
 class Stop < ApplicationRecord
   # belongs_to :line
-  has_many :edges, dependent: :destroy # almost works,.. looks for edges.stop_id not edges.from_id
+  has_many :edges # almost works,.. looks for edges.stop_id not edges.from_id
   # has_many :edges, dependent: :destroy, :foreign_key => 'to_id' # doenst work
   # has_many :edges, dependent: :destroy, :class_name => 'to_id' # doesnt work, sets name of column in stops
   has_many :trips
