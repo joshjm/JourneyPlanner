@@ -63,8 +63,9 @@ puts "#{ Trip.count } Trips"
 # greenLine.stops << stopSunshine << stopIkebukuro << stopIkebukuro << stopRoppongi << stopOdaiba 
 
 # edges # 
-Edge.create :from_id => stopSunshine.id, :to_id =>  stopIkebukuro.id
-Edge.create :to_id => stopSunshine.id, :from_id =>  stopIkebukuro.id
+
+Edge.create! :from_id => stopSunshine.id, :to_id => stopIkebukuro.id
+Edge.create :to_id => stopSunshine.id, :from_id => stopIkebukuro.id
 
 Edge.create :from_id => stopUeno.id, :to_id => stopIkebukuro.id
 Edge.create :to_id => stopUeno.id, :from_id => stopIkebukuro.id
@@ -101,5 +102,6 @@ Edge.create :to_id => stopRoppongi.id, :from_id => stopIdabashi.id
 
 Edge.create :from_id => stopUseless.id, :to_id => stopIdabashi.id
 Edge.create :to_id => stopUseless.id, :from_id => stopIdabashi.id
+
 
 puts "#{ Edge.count } Edges"

@@ -5,8 +5,8 @@ class StopsController < ApplicationController
 
   def destroy
     # destroy trips
-    Edge.where("to_id=#{params[:id]}").destroy_all
-    Edge.where("from_id=#{params[:id]}").destroy_all
+    # Edge.where("to_id=#{params[:id]}").destroy_all
+    # Edge.where("from_id=#{params[:id]}").destroy_all
     stop_name = Stop.find(params[:id])
     stop_name.destroy
     redirect_to action: 'index'
