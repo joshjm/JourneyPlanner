@@ -19,6 +19,7 @@ class StopsController < ApplicationController
     @stops = Stop.all
   end
   def create 
+    
     newStation = Stop.create(stop_params)
     newStation.save
     redirect_to action: 'index'
