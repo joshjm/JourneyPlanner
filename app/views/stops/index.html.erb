@@ -1,11 +1,47 @@
-<h1>Stops#index</h1>
-<p>Find me in app/views/stops/index.html.erb</p>
+<h1> View or Edit Stops Here </h2>
 <div class="container center">
     <%= render "shared/map" %>
 </div>
 
 <div class="row justify-content-md-center">
   <div class="col-md-8">
+
+<h2> Add a Station </h2>
+<%= form_with model: @stop do |f| %>
+    <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, :class => 'form-control', :placeholder => 'Station Name', required: true %>
+    </div>
+    <div class="form-group">
+        <%= f.label "In Operation?" %>
+        <%= f.check_box :operational, :class => 'form-control', :placeholder => 'Operational Status', required: true %>
+    </div>
+    <div class="form-group">
+        <%= f.label "x Location" %>
+        <%= f.number_field :location_x, :class => 'form-control', :placeholder => '0-20', required: true %>
+    </div>
+    <div class="form-group">
+        <%= f.label "y Location" %>
+        <%= f.number_field :location_y,:class => 'form-control', :placeholder => '0-20', required: true %>
+    </div>
+    <%= f.submit %> // need to make this button post to new stations, not index.
+<% end %>
+
+<h2> Add an Edge </h2>
+<%= form_with model: @edge do |f| %>
+    <div class="form-group">
+        <%= f.label "Edge Start" %>
+        <%= f.select :from_id, Stop.pluck(:name, :id), :class => 'form-control'  %>
+    </div>
+    <div class="form-group">
+        <%= f.label "Edge End" %>
+        <%= f.select :to_id, Stop.pluck(:name, :id), :class => 'form-control'  %>
+    </div>
+
+    <%= f.submit %> // need to make this button post to new edges
+<% end %>
+
+
 
 <h2> Stations Index </h2>
 <table class="table">

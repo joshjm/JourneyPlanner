@@ -1,6 +1,7 @@
 class Stop < ApplicationRecord
-  # belongs_to :line
-  # has_many :edges # almost works,.. looks for edges.stop_id not edges.from_id
+  # the first param name on this side doesnt matter - make it meaningful
+  # the class name defines what the actual kind of model we are talking about it in the foreign 
+  # the foreign key says the key name is in that foreign table, rather than the key/id in the actual class
   has_many :edge_from, class_name: "Edge", dependent: :destroy, foreign_key: "from_id"
   has_many :edge_to, class_name: "Edge", dependent: :destroy, foreign_key: "to_id"
   # has_many :edges, dependent: :destroy, :class_name => 'to_id' # doesnt work, sets name of column in stops

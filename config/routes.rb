@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  get 'stops/new'
+  # get 'stops/new'
   get 'stops/delete'
-  get 'stops/index'
-  get 'stops/New'
+  get 'stops/Eelete'
+
   get 'stops/Delete'
-  get 'stops/Index'
+  post 'stops/index'=> 'stops#new'
   root :to => 'pages#home'
 
  

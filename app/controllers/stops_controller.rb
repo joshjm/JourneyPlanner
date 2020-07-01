@@ -1,6 +1,9 @@
 class StopsController < ApplicationController
   before_action :generate_map_data
   def new
+
+    redirect_to action: 'index'
+
   end
 
   def destroy
@@ -14,5 +17,16 @@ class StopsController < ApplicationController
 
   def index
     @stops = Stop.all
+  end
+  def create 
+    newStation = Stop.create(stop_params)
+    newStation.save
+    redirect_to action: 'index'
+
+  end
+
+  private 
+  def stop_params
+    params.permit(:name, :location_x, :location_y, :operational)
   end
 end
