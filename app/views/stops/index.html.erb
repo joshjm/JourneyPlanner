@@ -28,7 +28,7 @@
 <% end %>
 
 <h2> Add an Edge </h2>
-<%= form_with model: @edge do |f| %>
+<%= form_with model: @edge, :url => edges_new_path do |f| %>
     <div class="form-group">
         <%= f.label "Edge Start" %>
         <%= f.select :from_id, Stop.pluck(:name, :id), :class => 'form-control'  %>

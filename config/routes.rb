@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  # get 'stops/new'
+  get 'edges/new'
+  post 'edges/new'
+  get 'edges/delete'
+  
   get 'stops/delete'
-  get 'stops/Eelete'
 
   get 'stops/Delete'
   post 'stops/index'=> 'stops#new'
@@ -22,13 +24,12 @@ Rails.application.routes.draw do
   #get 'trips/edit'
   get 'trips/all' 
   
-
+  
 
   get 'users/new'
   get 'users/create'
   get 'users/add_funds'
   resources :users #resources generates 8 routes for me
-
   resources :stops 
 
 
