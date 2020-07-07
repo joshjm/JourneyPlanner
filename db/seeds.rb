@@ -10,7 +10,6 @@ User.destroy_all
 Transaction.destroy_all
 Trip.destroy_all
 Stop.destroy_all
-# Line.destroy_all
 Edge.destroy_all
 
 u1 = User.create :name => "Joshua McDonald", :email => 'josh@gmail.com', :balance => 50, :password => 'chicken', :admin => true
@@ -28,11 +27,6 @@ ts4 = Transaction.create :user => u4,:amount => 20
 ts5 = Transaction.create :user => u5,:amount => 50 
 puts "#{ Transaction.count } Transactions"
 
-# blueLine = Line.create :name => "Blue Line", :color => "blue"
-# redLine = Line.create :name => "Red Line", :color => "red"
-# greenLine = Line.create :name => "Green Line", :color => "green"
-# puts "#{ Line.count } Lines"
-
 stopSunshine = Stop.create :name => "Sunshine City", :operational => true, :location_x =>3 , :location_y =>2 
 stopPokemon = Stop.create :name => "Pokemon Centre", :operational => true, :location_x => 13, :location_y =>2 
 stopIkebukuro = Stop.create :name => "Ikebukuro", :operational => true, :location_x => 4, :location_y =>7 
@@ -45,7 +39,6 @@ stopRoppongi = Stop.create :name => "Roppongi", :operational => true, :location_
 stopRamen = Stop.create :name => "Ramen Museum", :operational => true, :location_x => 2, :location_y => 21
 stopOdaiba = Stop.create :name => "Odaiba", :operational => true, :location_x => 13, :location_y => 20
 
-# stopUseless = Stop.create :name => "Useless", :operational => true, :location_x => 15, :location_y => 19
 puts "#{ Stop.count } Stops"
 
 tr1 = Trip.create :user => u1, :start_id => stopSunshine.id, :end_id => stopIdabashi.id, :date => "2020-05-3"
@@ -55,12 +48,6 @@ tr4 = Trip.create :user => u3, :start_id => stopIkebukuro.id, :end_id =>stopUeno
 tr5 = Trip.create :user => u4, :start_id => stopOdaiba.id, :end_id => stopShinjuku.id, :date => "2020-05-15"
 tr6 = Trip.create :user => u5, :start_id => stopRoppongi.id, :end_id => stopIdabashi.id, :date => "2020-05-29"
 puts "#{ Trip.count } Trips"
-
-
-# # Associations #################################################################
-# blueLine.stops << stopRamen << stopRoppongi << stopShimbashi << stopUeno << stopPokemon
-# redLine.stops << stopShibuya << stopRoppongi << stopShimbashi << stopUeno << stopIkebukuro << stopShinjuku
-# greenLine.stops << stopSunshine << stopIkebukuro << stopIkebukuro << stopRoppongi << stopOdaiba 
 
 # edges # 
 
@@ -99,9 +86,5 @@ Edge.create :to_id => stopIdabashi.id, :from_id => stopIkebukuro.id
 
 Edge.create :from_id => stopRoppongi.id, :to_id => stopIdabashi.id
 Edge.create :to_id => stopRoppongi.id, :from_id => stopIdabashi.id
-
-# Edge.create :from_id => stopUseless.id, :to_id => stopIdabashi.id
-# Edge.create :to_id => stopUseless.id, :from_id => stopIdabashi.id
-
 
 puts "#{ Edge.count } Edges"
